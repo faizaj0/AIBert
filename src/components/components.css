@@ -1,0 +1,487 @@
+/* CSS file contains all necessary css for files in the components folder */
+/* If additonal css code is to be added, add it here or drop in relevant component file and it will be moved over. */
+
+
+/* chatbot.js */
+
+label {
+    pointer-events: none;
+}
+
+/* --------------------------------------course.js-------------------------------------- */
+#courseBody{
+    background-color: pink;
+}
+.acorn-icon, .acorn-icon-hover, .acorn-icon-bookmarked{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.acorn-icon{
+    background-image: url("../Images/Acorn.svg");    
+}
+.acorn-icon-bookmarked{
+    background-image: url("../Images/BookmarkedAcorn.svg")
+}
+.acorn-icon-hover{
+    z-index: -1;
+}
+.acorn-icon:hover .acorn-icon-hover{
+    background-image: url("../Images/AcornGlow.svg");
+}
+.acorn-icon-bookmarked:hover .acorn-icon-hover{
+    background-image: url("../Images/AcornGlow.svg");
+}
+
+/* -----------------------------------details.js---------------------------------------- */
+
+/* -----------------------------------courses.js---------------------------------------- */
+
+#cssGrid {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+}
+
+.filterSection {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.filterSection div {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.filterSection div strong {
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.filterSection div em {
+    margin-right: 30px;
+}
+
+.wrapperStyle {
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 10px;
+    row-gap: 1em;
+    opacity: 0;
+}
+
+.descriptionStyle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardStyle {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #4861e7; 
+    color: white;
+    padding: 1rem;
+    font-size: 16px;
+    padding-bottom: 0;
+    width: 20%;
+    height: 260px;
+    min-width: 300px;
+    margin: 1%;
+    border-radius: 15px;
+}
+
+.cardStyle:hover {
+    background-color: #6377ec;
+    cursor: pointer;
+}
+
+.cardStyle div:nth-of-type(2) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.courseThumb {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.filterSection {
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.filterButtonDiv { 
+    display: inline-block;
+}
+
+.pageButtons {
+    padding: 10px 15px;
+    margin: 4px 5px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Overlay Course Details */
+
+.overlayCourseSpan {
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    margin-top: 62px;
+    opacity: 0;
+    left:0;
+    z-index: 2;
+}
+
+#blackOverlay {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+
+.overlayCourseDetails {
+    position: fixed;
+    width: 80%;
+    height: fit-content;
+    padding: 1%;
+    margin-left: 8%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #4861e7;
+    border-radius: 25px;
+}
+
+#detailExit {
+    position: fixed;
+    margin-top: -3px;
+}
+
+#detailExit img {
+    width: 20px;
+}
+
+#detailExit:hover {
+    cursor: pointer;
+}
+
+.overlayCourseDetails .detailBlock {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    height: 100%;
+}
+
+.overlayCourseDetails .courseImage img {
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 4px solid black;
+}
+
+.overlayCourseDetails .courseTitle {
+    float:left;
+    font-weight: bold;
+    font-size: 27px;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    text-align: left;
+    color: white;
+}
+
+.overlayCourseDetails .courseDescription {
+    float:right;
+    font-size: 23px;
+    width: 100%;
+    margin-right: 5%;
+    color: white;
+}
+
+/* -----------------------------learningJourney.js-------------------------------------- */
+
+.learningJourneyButtons {
+    text-align: center;
+    height: fit-content;
+    margin: 25px;
+    opacity: 0;
+}
+
+.learningJourneyButton {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.learningJourneyButton p {
+    margin: 0px;
+}
+
+.learningJourneyButton:hover {
+    cursor: pointer;
+}
+
+.treeCourses {
+    width: fit-content;
+    margin-left: -162px;
+    margin-top: 35px;
+    position: absolute;
+    height: 218px;
+    z-index: 1;
+}
+
+.treeCardStyle {
+    display: inline-block;
+    background-color: #4861e7; 
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    padding-bottom: 0;
+    width: 200px;
+    height: fit-content;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px;
+    vertical-align: middle;
+}
+
+.treeCardStyle:hover {
+    background-color: #6377ec;
+    cursor: pointer;
+}
+
+.treeCardStyle div:nth-of-type(2) {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.loading {
+    text-align: center;
+}
+
+.learningJourneyPage h1 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.learningJourneyPage .description {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* --------------------------CreateLearningJourney.js----------------------------------- */
+
+.journeyInstruction {
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+}
+
+.journeyCreationButtons {
+    text-align: center;
+}
+
+.journeyCreationButton {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: white;
+}
+
+.journeyCreationButton:hover {
+    cursor: pointer;
+}
+
+/* navigation.js */
+
+/* -------------------------------bookmarks.js-------------------------------------------*/
+
+.faq_title{
+    text-indent: 20%;
+}
+
+.textbox{
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 12px;
+    border-width: medium 5px;   
+    background-color: #eecb60;       
+    border: 20px solid #eecb60;     
+    border-radius:25px; 
+    padding: 10px;      
+    word-wrap: break-word;      
+    font-size: 20px;    
+}     
+
+.queries{
+    font-size: large;
+    display:inline;
+}
+
+.fade_animation{
+    animation: Appear 2s;
+    -webkit-animation: Appear 2s;
+    -moz-animation: Appear 2s;
+    -o-animation: Appear 2s;
+    -ms-animation: Appear 2s;
+  }
+  
+  @keyframes Appear{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/* ---------------------------------home.js--------------------------------------------- */
+
+.input-output-fields {
+    width: 550px;
+}
+
+.userInput {
+    margin-bottom: 30px;
+}
+
+.courseSpan {
+    position: absolute;
+    width: 1166px; /*Want this to span the width of the app, not sure how else to do it!*/
+    height: 360px;
+    margin-top: 62px;
+}
+
+.courseDetails {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.courseDetails .courseImage img {
+    display: inline-block;
+    width: 360px;
+    margin-left: 165px;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+.courseDetails .courseTitle {
+    float:left;
+    font-weight: bold;
+    font-size: 27px;
+    width: 350px;
+    margin-top: 8px;
+    margin-left: 169px;
+    text-align: left;
+}
+
+.courseDetails .courseDescription {
+    float: right;
+    font-size: 23px;
+    width: 440px;
+    margin-right: 140px;
+    margin-top: -240px;
+}
+
+/*Response Button Styling*/
+
+.chatbot .responseButtons {
+    position: absolute;
+    width: 1166px;/*Again, want this to span the width of the app*/
+    height: 50px;
+    margin-top: 430px;
+    text-align: center;
+}
+
+.overlayCourseDetails .responseButtons {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    margin-left: -50px;
+    padding-top: 15px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.chatbot .responseButton {
+    position: relative;
+    border-style: solid;
+    border-color:black;
+    border-width: 3px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #eecb60;
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor:default;
+    opacity: 0;
+}
+
+.overlayCourseDetails .responseButton {
+    position: relative;
+    border-style: solid;
+    border-color:black;
+    border-width: 4px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #eecb60;
+    width:fit-content;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    top: 0px;
+    cursor: pointer;
+}
+
+.chatbot .responseButton img {
+    width: 20px;
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.overlayCourseDetails .responseButton img {
+    width: 50px;
+}
+
+/* login.js */
+
+/* profile.js */
